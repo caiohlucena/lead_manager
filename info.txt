@@ -1,0 +1,21 @@
+A pasta public é a raiz do projeto e contém o arquivo index.php, que é o ponto de entrada da aplicação. Nesta pasta também estão os recursos estáticos, como arquivos CSS e JavaScript, organizados dentro da pasta assets.
+
+A pasta src contém o código-fonte do projeto, com subpastas como controllers, models e views, onde os diferentes componentes do aplicativo são organizados.
+A pasta templates contém arquivos PHP reutilizáveis, como cabeçalhos (header.php) e rodapés (footer.php), que podem ser incluídos em várias páginas.
+A pasta vendor é usada para armazenar dependências externas instaladas via gerenciador de pacotes, como o Composer.
+A pasta config é usada para armazenar arquivos de configuração, como as credenciais do banco de dados ou configurações gerais do aplicativo.
+A pasta database pode ser usada para armazenar scripts SQL ou classes relacionadas ao banco de dados.
+
+Projeto
+    config
+    database
+    public
+    assets  
+        CSS
+        Js 
+    src
+        controllers
+        models 
+        views
+    templates
+    vendor

@@ -1,0 +1,43 @@
+.button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-self: flex-start;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    transition: all 1000ms;
+    font-size: 12px;
+    overflow: hidden;
+    outline: 2px solid #afafaf;
+    z-index: 9999;
+  }
+  
+  button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #f5631f;
+    box-shadow: 4px 5px 17px -4px #060e0f;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff641d;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }
+  

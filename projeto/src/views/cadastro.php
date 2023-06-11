@@ -1,7 +1,6 @@
 <?php include_once '../../templates/header.html'; ?>
-<link rel="stylesheet" href="../../public/assets/css/form.css" type="text/css">
+<link rel="stylesheet" href="../../public/assets/css/stylesheet_form.css" type="text/css">
 <?php include '../../templates/navbar.html'; ?>
-
 <h2>Formulário de Cadastro para Credenciamento</h2>
 <div class="content">
   <div class="form-wrapper">
@@ -44,11 +43,9 @@
       </div>
       <div class="form-row">
         <label for="agente">Agente:</label>
+        <?php include '../controllers/visualizar_usuarios.php'; ?>
         <select id="agente" name="agente" required>
-          <option value="3">-</option>
-          <option value="4">Iristenio Campelo</option>
-          <option value="5">Rodrigo Rocha</option>
-          <option value="1">Caio Lucena</option>
+          <?php include '../controllers/select_code.php'; ?>
         </select>
         <div class="error-message" id="agenteError"></div>
       </div>

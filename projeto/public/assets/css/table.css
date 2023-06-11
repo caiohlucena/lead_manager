@@ -152,49 +152,7 @@ h2 {
 
 }
 
-.button {
-    padding: 1em 2em;
-    border: none;
-    border-radius: 2px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000000;
-    transition: all 1000ms;
-    font-size: 12px;
-    overflow: hidden;
-    outline: 2px solid #afafaf;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 9999;
-    /* Valor alto para sobrepor outros elementos */
 
-}
-
-.button:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-    outline: 2px solid #f51f1f;
-    box-shadow: 4px 5px 17px -4px #060e0f;
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #ff0909cc;
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: width 1000ms;
-}
-
-.button:hover::before {
-    width: 250%;
-}
 .menu-container {
     position: fixed;
     top: 0;

@@ -17,13 +17,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // IF Verifica se a consulta retornou algum resultado
     if ($result->num_rows > 0) {
         // Usuário autenticado com sucesso
-        echo "Login bem-sucedido. Redirecionando para a página de painel...";
-        // Redirecionar o usuário para a página de painel
-        header("Location: ../views/painel.php");
-        exit(); //Encerrar a execução após o redirecionamento
+        echo '<script>
+            alert("Bem vindo, ' . $username.' ");
+            window.location.href = "../views/painel.php";
+            </script>';
+        exit();
     } else {
         // Credenciais inválidas
-        header("Location: ../../public/index.html");
+        echo '<script>
+            alert("Credenciais inválidas.");
+            window.location.href = "../../public/index.html";
+            </script>';
+        exit();
     }
 
     // Fecha a conexão com o banco de dados

@@ -23,7 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit(); //Encerrar a execução após o redirecionamento
     } else {
         // Credenciais inválidas
-        header("Location: ../../public/index.html"); }
+        header("Location: ../../public/index.html");
+    }
 
     // Fecha a conexão com o banco de dados
     $conn->close();

@@ -1,0 +1,77 @@
+/* Modelo básico */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(15, 15, 15, 0.4);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  
+  .input {
+    height: 25px;
+    width: 100%;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(87, 42, 0);
+    padding: 5px;
+    border-radius: 5px;
+    transition: .2s linear;
+    position: relative;
+  }
+  .button {
+    align-self: center;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    transition: all 1000ms;
+    font-size: 12px;
+    overflow: hidden;
+    outline: 2px solid #afafaf;
+    top: 0;
+    right: 0;
+  }
+  
+  button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #f5631f;
+    box-shadow: 4px 5px 17px -4px #060e0f;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff641d;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }

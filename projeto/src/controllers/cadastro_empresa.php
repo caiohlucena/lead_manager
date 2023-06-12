@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $agente = $_POST['agente'];
   $email = $_POST['email'];
   $licitacao = $_POST['licitacao'];
+  $obs = $_POST['obs'];
+
 
   // Validar e limpar os dados (implementar validações e filtragens apropriadas)
 
@@ -18,16 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   require_once '../../config/conexao.php';
 
   // Preparar a consulta SQL
-  $sql = "INSERT INTO empresas (status, responsavel, nome_fantasia, cnpj, telefone, local, agente, email, licitacao)
-        VALUES ('$status', '$responsavel', '$loja', '$cnpj', '$telefone', '$local', '$agente', '$email', '$licitacao')";
+  $sql = "INSERT INTO empresas (status, responsavel, nome_fantasia, cnpj, telefone, local, agente, email, licitacao, descricao)
+        VALUES ('$status', '$responsavel', '$loja', '$cnpj', '$telefone', '$local', '$agente', '$email', '$licitacao', '$obs')";
 
   // Executar a consulta SQL
   if ($conn->query($sql) === TRUE) {
-    // Redirecionar para a página de cadastro com sucesso
+    // Redirecionar para a página com os cadastros com sucesso
     header("Location: ../views/painel.php");
     exit();
   } else {
     echo "Erro ao inserir os dados: " . $conn->error;
+    echo '<a href="../views/painel.php">Página Inicial</a>';
   }
 
   // Fechar a conexão com o banco de dados (se necessário)

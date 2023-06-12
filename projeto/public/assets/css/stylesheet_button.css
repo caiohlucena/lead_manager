@@ -1,9 +1,9 @@
-.button {
+#btnSair {
     position: fixed;
     bottom: 0;
     left: 0;
     align-self: flex-start;
-    padding: 1em 2em;
+    padding: 10px 10px;
     border: none;
     border-radius: 2px;
     font-weight: bold;
@@ -15,16 +15,18 @@
     overflow: hidden;
     outline: 2px solid #afafaf;
     z-index: 9999;
+    margin-left:65px;
+
   }
   
-  button:hover {
+  #btnSair:hover {
     color: #ffffff;
     transform: scale(1.1);
     outline: 2px solid #f5631f;
     box-shadow: 4px 5px 17px -4px #060e0f;
   }
   
-  button::before {
+  #btnSair::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -37,7 +39,7 @@
     transition: width 1000ms;
   }
   
-  button:hover::before {
+  #btnSair:hover::before {
     width: 250%;
   }
   

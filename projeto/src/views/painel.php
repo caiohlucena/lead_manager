@@ -1,6 +1,5 @@
 <?php include_once '../../templates/header.html'; ?>
 <link rel="stylesheet" href="../../public/assets/css/table.css" type="text/css">
-<link rel="stylesheet" href="../../public/assets/css/stylesheet_button.css" type="text/css">
 <?php include '../../templates/navbar.html'; ?>
 <h2>Tabela de Credenciamento</h2>
 <div class="content">

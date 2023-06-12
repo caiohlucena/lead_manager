@@ -1,0 +1,32 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 100%;
+    background-color: #3333333a;
+    color: #ffffff;
+    font-style: BOLD;
+    backdrop-filter: blur(10px);
+
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 25px;
+  }
+  
+  .menu li a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .content {
+    margin-left: 130px; /* Adicione a margem para evitar sobreposição */
+  }

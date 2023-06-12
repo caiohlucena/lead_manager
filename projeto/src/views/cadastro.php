@@ -14,6 +14,21 @@
         </select>
       </div>
       <div class="form-row">
+        <label for="agente">Agente:</label>
+        <?php include '../controllers/visualizar_usuarios.php'; ?>
+        <select id="agente" name="agente" required>
+          <?php include '../controllers/select_code.php'; ?>
+        </select>
+        <div class="error-message" id="agenteError"></div>
+      </div>
+      <div class="form-row">
+        <label for="licitacao">Licitação?</label>
+        <select id="licitacao" name="licitacao" required>
+          <option value="2">Não</option>
+          <option value="1">Sim</option>
+        </select>
+      </div>
+      <div class="form-row">
         <label for="responsavel">Nome do Responsável:</label>
         <input type="text" id="responsavel" name="responsavel" required>
         <div class="error-message" id="responsavelError"></div>
@@ -42,19 +57,8 @@
         <input type="text" id="local" name="local">
       </div>
       <div class="form-row">
-        <label for="agente">Agente:</label>
-        <?php include '../controllers/visualizar_usuarios.php'; ?>
-        <select id="agente" name="agente" required>
-          <?php include '../controllers/select_code.php'; ?>
-        </select>
-        <div class="error-message" id="agenteError"></div>
-      </div>
-      <div class="form-row">
-        <label for="licitacao">Licitação?</label>
-        <select id="licitacao" name="licitacao" required>
-          <option value="2">Não</option>
-          <option value="1">Sim</option>
-        </select>
+        <label for="obs">Observações:</label>
+        <input type="text" id="obs" name="obs">
       </div>
       <div class="form-row">
         <button class="button" type="submit">Salvar</button>

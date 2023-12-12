@@ -1,6 +1,28 @@
 <?php include_once '../../templates/header.html'; ?>
 <link rel="stylesheet" href="../../public/assets/css/stylesheet_form.css" type="text/css">
 <?php include '../../templates/navbar.html'; ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#cnpj").on("keyup", function(e) {
+      $(this).val(
+        $(this).val()
+        .replace(/\D/g, '')
+        .replace(/^(\d{2})(\d{3})?(\d{3})?(\d{4})?(\d{2})?/, "$1.$2.$3/$4-$5")
+      );
+    });
+  });
+
+  $(document).ready(function() {
+    $("#telefone").on("keyup", function(e) {
+      $(this).val(
+        $(this).val()
+        .replace(/\D/g, '')
+        .replace(/(\d{2})(\d{1,4})(\d{1,4})/, "($1) $2-$3")
+      );
+    });
+  });
+</script>
 <h2>Formulário de Cadastro para Credenciamento</h2>
 <div class="content">
   <div class="form-wrapper">
@@ -40,7 +62,7 @@
       </div>
       <div class="form-row">
         <label for="cnpj">CNPJ:</label>
-        <input type="text" id="cnpj" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx">
+        <input type="text" id="cnpj" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" maxlength="18">
         <div class="error-message" id="cnpjError"></div>
       </div>
       <div class="form-row">

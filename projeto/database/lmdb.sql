@@ -63,15 +63,6 @@ CREATE TABLE IF NOT EXISTS `empresas` (
 --
 -- Despejando dados para a tabela `empresas`
 --
-
-INSERT INTO `empresas` (`id`, `cnpj`, `status`, `telefone`, `local`, `responsavel`, `nome_fantasia`, `licitacao`, `cep`, `email`, `agente`, `descricao`) VALUES
-(30, '12345678901234', 'Em andamento', '16996273479', 'Ribeirao preto', 'Caio Lucena', 'Enoq Bank', '', '', '', 1, NULL),
-(31, '', 'Concluido', '(16) 99627-3479', 'Ribeirao preto', 'Teste', 'Caio', '1', '', 'caio.lucena@enoqbank.com', 4, NULL),
-(32, '', 'Aguardando', '16999999999', 'Ribeirao preto', 'Caio Henrique', 'Teste de loja', '1', '', 'caio.lucena@enoqbank.com', 1, NULL),
-(33, '', 'Em andamento', '(16) 99627-3479', 'Ribeirao preto', 'Teste', 'teste', '2', '', 'caio.lucena@enoqbank.com', 1, NULL),
-(34, '', 'Aguardando', '16996273479a', '', 'Teste', 'TEste', '2', '', 'caio.lucena@enoqbank.com', 1, NULL),
-(35, '', 'Em andamento', '(16) 99627-3479', 'Ribeirao preto', 'Teste nome', '12', '2', '', 'caio.lucena@enoqbank.com', 4, NULL);
-
 -- --------------------------------------------------------
 
 --

@@ -36,9 +36,11 @@ cd lead_manager
 
 Renomeie o arquivo .env.example para .env.
 Edite o arquivo .env e atualize as configurações do banco de dados de acordo com suas credenciais.
+
 4. Importe o banco de dados:
 
 Execute o script SQL fornecido no arquivo lead_manager.sql para criar o esquema do banco de dados e as tabelas necessárias.
+
 5. Inicie o servidor web e certifique-se de que o PHP esteja configurado corretamente para executar o aplicativo.
 
 6. Abra seu navegador e acesse a URL do Lead Manager para usá-lo.
